@@ -142,7 +142,7 @@ armature is not sent with them. The console says which and why.
 ## Negotiation and fallback
 
 On connecting, the add-on's hello lists what it can send and score answers
-with what it accepts (the protocol's "Negotiation" section). The add-on sends only
+with what it accepts ([`PROTOCOL.md`](PROTOCOL.md#negotiation)). The add-on sends only
 frame types score accepts; a receiver that does not answer within a second
 gets plain glTF scenes and value records. Another DCC exporter can drive
 the same process with nothing but glTF scene frames, and adopt the patch,
@@ -179,6 +179,5 @@ defaults to *Unitless*. *Raw* sends Blender's numbers as they are;
 
 The receiving process is documented at
 https://ossia.io/score-docs/processes/gltf-live-link.html, and the wire
-format in score's
-[`PROTOCOL.md`](https://github.com/ossia/score/blob/master/src/plugins/score-plugin-threedim/Threedim/LiveLink/PROTOCOL.md); any program that can write a .glb can drive
-the process.
+format in [`PROTOCOL.md`](PROTOCOL.md); any program that can write a .glb
+can drive the process.

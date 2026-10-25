@@ -18,4 +18,4 @@ network = "Send the scene to ossia score over TCP"
 files = "Export the scene to a temporary glTF file"
 
 [build]
-paths_exclude_pattern = ["__pycache__/", ".git/", ".gitignore", "examples/", "README.md", "*.zip"]
+paths_exclude_pattern = ["__pycache__/", ".git/", ".gitignore", "examples/", "README.md", "PROTOCOL.md", "*.zip"]
