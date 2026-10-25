@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+id = "score_livelink"
+version = "1.0.0"
+name = "ossia score Live Link"
+tagline = "Stream the scene live to ossia score as glTF"
+maintainer = "ossia team"
+type = "add-on"
+website = "https://ossia.io/score-docs/processes/gltf-live-link.html"
+tags = ["Import-Export", "Scene"]
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+[permissions]
+network = "Send the scene to ossia score over TCP"
+files = "Export the scene to a temporary glTF file"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", ".git/", ".gitignore", "examples/", "README.md", "*.zip"]
